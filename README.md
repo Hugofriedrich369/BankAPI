@@ -24,6 +24,5 @@ quarkus dev
  POST   |                      |                    Criar uma conta corrente                     |                            nome <br> cpf                             
  GET    | /saldo/{numeroConta} |                    Ver saldo de uma conta corrente              |
  POST   |      /depositar      |           Depositar uma certa quantia para uma conta            |                        numeroConta <br> valor                        
- POST   |      /depositar      |           Depositar uma certa quantia para uma conta            |                        numeroConta <br> valor                        
  POST   |        /sacar        |                  Sacar uma quantidade da conta                  |                        numeroConta <br> valor                        
  PATCH  |     /transferir      | transferir uma quantidade da conta origem para a conta destino  | contaOrigem (numeroConta) <br> contaDestino (numeroConta) <br> valor 
