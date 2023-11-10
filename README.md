@@ -13,6 +13,8 @@ Ou
 quarkus dev
 ~~~
 
+A aplicação será iniciada em http://localhost:8080
+
 ## ⚙️ | Endpoints
 
 > Endpoint principal: /contacorrente
