@@ -17,9 +17,16 @@ public class GreetingResource {
     List<ContaCorrente> contasCorrentes = new ArrayList<>();
     ContaCorrenteService contaService = new ContaCorrenteServiceImpl(contasCorrentes);
 
+
+    @GET
+    @Path("/listarContas")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String ListarContas() {
+        return contasCorrentes.toString();
+    }
     @POST
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public String CriarConta(
             @FormParam("nome") String nome, @FormParam("cpf") String cpf
     ) {
